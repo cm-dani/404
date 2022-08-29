@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar-clan{
+    background-color: #1C6EA4; 
+    box-shadow: 2px 2px 5px 1px #6796B6;
+}
+ul.nav a.nav-link{ 
+    color: white;
+}
+.text-name{
+    color: #f4a835;
+}
+
+.icono-clan {
+    width:80px; 
+    height: auto;
+}
+/*newv1*/
+
+.body {
+  margin: 0;
+}
+
+  .header {
+  display: flex;
+  min-height: 80px;
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  line-height: 20px;
+}
+
+.navbar {
+  background-color: #00093c;
+  box-shadow: 2px 2px 5px 1px #6796b6;
+  display: flex;
+  min-height: 80px;
+  align-items: center;
+  justify-content: space-between;
+   padding: 10px 47px 10px 8px;
+  border-bottom-right-radius: 125px;
+}
+.navbar-brand{
+  display: flex;
+  align-items: center;
+
+}
+strong.text-clan{
+  color: #f4a835;
+  font-size: 27px;
+}
+.icono-clan {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  padding-right: 17px;
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: orange;
+}
+a.btn:hover {
+  border: 1px solid #f7b148;
+  background-color: orange;
+}
+
+/*footer*/
+
+  hr.solid {
+    border-top: 2px solid #bbb;
+  }
+  .b-great-divider2 {
+    height: 3rem;
+    border-width: 1px 0;
+  }
+
+
+
+  
+footer{
+    width:100%;
+    bottom:0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding:100px 0 30px;
+    border-top-left-radius: 125px;
+    font: size 13px;
+    line-height: 20px;
+}
+
+.row{
+
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap:wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2) .col:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo{
+    width: 79px;
+    margin-bottom: 5px;
+    align-self: center;
+}
+.copyright {
+    margin-top: 5px;
+    text-align: center;
+
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footertext{
+    color: rgba(232, 216, 241, 0.771);
+
+}
+
+.footertext:hover{
+    color: rgba(173, 76, 228, 0.771);
+
+}
+
+
+.social-icons .fa-brands{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/*main*/
+
+#main{
+
+}
