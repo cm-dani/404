@@ -81,6 +81,17 @@ a.btn:hover {
 
 /*footer*/
 
+
+
+.b-great-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+
+
   hr.solid {
     border-top: 2px solid #bbb;
   }
@@ -89,15 +100,12 @@ a.btn:hover {
     border-width: 1px 0;
   }
 
-
-
-  
 footer{
     width:100%;
     bottom:0;
     background: linear-gradient(to right, #00093c, #2d0b00);
     color: #fff;
-    padding:100px 0 30px;
+    padding: 0px 0 30px;
     border-top-left-radius: 125px;
     font: size 13px;
     line-height: 20px;
@@ -172,8 +180,254 @@ ul li a{
     cursor: pointer;
 }
 
-/*main*/
+/*home*/
 
-#main{
+#home {
+  background-image: url(../images/home.jpg);
+  background-position: right 30px;
+  background-size: cover;
+  padding-top: 5rem;
+  
+}
+
+.text-home {
+  color: #f7b148;
+}
+
+
+.btn2 {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-width: 2px;
+  font-weight: 500;
+  
+}
+
+.btn-home,
+.btn-home:focus {
+    background-color: #f7b148;
+    color: white;
+    border-color: #f7b148;
+    
+}
+
+.btn-home:hover {
+    background-color: white;
+    color: #f7b148;
+    border-color: #f7b148;
+    
+}
+
+/*sign in*/
+.text-sign{
+  margin-bottom: 15px;
+  color: #f7b148;
+}
+
+div.sign{
+  margin-top: 15px;
+  text-align:center;
+  padding: 15px;
+}
+.signbutton{
+position: relative;
+background: #444;
+color:#fff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 1.5em;
+letter-spacing: 0.1em;
+padding: 10px 30px;
+transition: 0.5s;
+border-radius: 10px;
+}
+
+
+
+
+a.signbutton:hover{
+letter-spacing: 0.25em;
+border-radius: 10px;
+background: var(--clr);
+color:var(--clr);
+box-shadow: 0 0 35px var(--clr);
+}
+a.signbutton::before{
+content:'';
+position: absolute;
+border-radius: 10px;
+inset:2px;
+background:orange;
+}
+a.signbutton span{
+position: relative;
+border-radius: 10px;
+z-index:1;
+}
+
+a.signbutton i{
+  position: absolute;
+  border-radius: 10px;
+  inset:0;
+  display:block;
+}
+
+a.signbutton i::before{
+  content:'';
+  position:absolute;
+  border-radius: 10px;
+  top:-3.5px ;
+  left:80%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #fff;
+  background: orange;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+a.signbutton:hover i::before{
+  width: 20px;
+  border-radius: 10px;
+  left:20%;
+}
+
+a.signbutton i::after{
+  content:'';
+  border-radius: 10px;
+  position:absolute;
+  bottom:-3.5px ;
+  left:20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #fff;
+  background: orange;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+a.signbutton:hover i::after{
+  width: 20px;
+  border-radius: 10px;
+  left:80%;
+}
+
+/* recruiter */
+#recruiter {
+  position: relative;
+}
+
+#recruiter::before {
+  content: "";
+  width: 900px;
+  height: 695px;
+  position: absolute;
+  background-color: orange;
+  z-index: -1;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 1000px;
+  border-left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#recruiter h6 {
+  color: orange;
+}
+
+@media (max-width: 992px) {
+  #about::before {
+      height: 40%;
+      width: 100%;
+  }   
+}
+
+.recruiter{
+ 
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-bottom: 20px;
 
 }
+.text-recruiter{
+ 
+  color: orange;
+
+}
+
+.responsive {
+  width: 100%;
+  height: 647px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+
+
+
+
+/* FOOTER 404 // SIMPLE */
+.footersimple {
+  padding: 0px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footersimple ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+
+.footersimple ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footie{
+  padding: 0px 40px;
+
+}
+.logofootie{
+    width: 50px;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 17px;
+}
+.footersimple .social {
+  text-align:right;
+  align-items: center;
+}
+
+.footersimple .social > a {
+  font-size:20px;
+  width:20px;
+  height:20px;
+  line-height:10px;
+  display:inline-block;
+  text-align:center;
+  margin:0 8px;
+  color:white;
+}
+
+.footersimple .social > a:hover {
+  color: orange;
+}
+
+.footersimple .copyright {
+  margin-top:8px;
+  text-align:right;
+  font-size:17px;
+  color:whitesmoke;
+  margin-bottom:0;
+  padding-right: 10px;
+}
+
